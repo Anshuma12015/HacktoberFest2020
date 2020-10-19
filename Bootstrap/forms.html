@@ -4,51 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="./form.css"
     <title>Boostrap 4 Form</title>
 </head>
 <body>
-    <div class="content-wrapper">
+    <div class="content-wrapper" id="add">
 
     <div class="container-fluid">
         <div class="col-md-4 mx-auto mt-5">
-        <h3 class="text-center">Boostrap 4 Ceneterd Form</h3>
+        <h3 class="text-center" id="heading">Boostrap 4 Centered Form</h3>
         <form>
             <div class="form-group">
-                <label for="email">Email</label>
+                <label for="email" >Email</label>
                 <input type="email" class="form-control" id="email" placeholder="Enter your email here">
             </div>
 
             <div class="form-group">
                 <label for="password">Password</label>
                 <input type="password" class="form-control" id="password" placeholder="Enter password here">
-                <small class="text-muted">Password must be 8 character</small>
+                <small class="text-muted" id="new">Password must contain an uppercase and a lowercase , a number and a specail character and must contain minimum of 9 characters.</small>
             </div>
 
-            <div class="form-group">
-                <label for="select">Select</label>
-                <select name="select" class="form-control" id="select">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-
-                </select>
-            </div>
+            
 
             <div class="form-group">
-                <label for="ms">Multiple Select</label>
-                <select multiple name="select" id="ms" class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>                    
-                </select>
+                <label for="ms">How shall we contact you?</label>
+                <div id="op">
+                  <div class="radio">
+  <label><input type="radio"  checked >Email</label>
+</div>
+                  <div class="radio"></div>
+  <label><input type="radio" name="optradio" >Mobile</label>
+</div>
+               
             </div>
 
             <div class="form-group">
@@ -81,8 +69,8 @@
                 <input type="text" id="txts" class="form-control form-control-sm">
             </div>
 
-            <input type="submit" class="btn btn-primary mb-3" value="Submit" class="form-control-button btn-info">
-            <input type="submit" class="btn btn-danger mb-3" value="Reset" class="form-control-button btn-info">
+            <input type="submit" class="btn btn-outline-primary mb-3" value="Submit" class="form-control-button btn-info">
+            <input type="submit" class="btn btn-outline-danger mb-3" value="Reset" class="form-control-button btn-info">
         </form>
 
     </div>
